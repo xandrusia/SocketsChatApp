@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.Label?>
+        <?import javafx.scene.control.ListView?>
+        <?import javafx.scene.control.TextField?>
+        <?import javafx.scene.layout.AnchorPane?>
+        <?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="470.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment2.client.views.view2.ChatController">
+<children>
+    <TextField fx:id="messageTextField" layoutX="14.0" layoutY="386.0" prefHeight="36.0" prefWidth="261.0" />
+    <Text fx:id="info" layoutX="334.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of people using chat before you connected:" wrappingWidth="205.33333333333348" />
+    <Button fx:id="sendToAll" layoutX="311.0" layoutY="392.0" mnemonicParsing="false" onAction="#onSendToAllButton" text="send to all" />
+    <Button fx:id="sendToUser" layoutX="393.0" layoutY="391.0" mnemonicParsing="false" onAction="#onSendToUserButton" text="send to the earliest joined chat user" />
+    <ListView fx:id="messageListView" layoutX="22.0" layoutY="58.0" prefHeight="294.0" prefWidth="250.0" />
+    <Label fx:id="usersList" layoutX="323.0" layoutY="58.0" prefHeight="83.0" prefWidth="205.0" />
+    <Label fx:id="youLabel" layoutX="98.0" layoutY="22.0" prefHeight="25.0" prefWidth="126.0" />
+    <Text layoutX="55.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You :" wrappingWidth="34.32882308959961" />
+    <Label fx:id="amountLabel" layoutX="387.0" layoutY="279.0" prefHeight="36.0" prefWidth="103.0" />
+    <Text layoutX="382.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available chat users" wrappingWidth="134.32879638671875" />
+</children>
+</AnchorPane>
